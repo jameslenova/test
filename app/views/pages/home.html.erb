@@ -1,0 +1,20 @@
+<h1>Pages#home</h1>
+
+
+<%= render 'promolist' %>
+
+<p>
+<% if !signed_in? %>
+<%= link_to "login", 'http://127.0.0.1:3000/auth/facebook'%>
+<%else%>
+<%= link_to "logout", logout_path %>
+<%end%>
+
+
+
+
+
+
+
+
+<p>Find me in app/views/pages/home.html.erb</p>

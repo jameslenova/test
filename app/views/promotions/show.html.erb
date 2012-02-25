@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Dateline:</b>
+  <%= @promotion.dateline %>
+</p>
+
+<p>
+  <b>Minimumorder:</b>
+  <%= @promotion.minimumorder %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @promotion.price %>
+</p>
+
+<p>
+  <b>Product:</b>
+  <%= @promotion.product.name %>
+</p>
+=================
+
+
+<%= render :partial => "bid", :collection => @bids %>
+
+
+<p>
+finish bids list 
+</p>
+
+
+<% if signed_in? %>
+              <%= render 'formbid' %>
+<%end%>
+
+
+
+<%= link_to 'Edit', edit_promotion_path(@promotion) %> |
+<%= link_to 'Back', promotions_path %>

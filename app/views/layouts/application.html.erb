@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Testdemo</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+
+<%= debug(session[:fb]) if Rails.env.development? %> 
+
+<%= debug(params) if Rails.env.development? %> 
+
+<%= debug(session[:user_id]) if Rails.env.development? %> 
+
+
+
+<%= debug(current_user) if Rails.env.development? %> 
+
+<%= debug(signed_in?) if Rails.env.development? %> 
+
+<%= debug(User.all) if Rails.env.development? %> 
+
+
+
+
+</body>
+</html>

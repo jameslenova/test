@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  dateline: 2012-02-22
+  minimumorder: 1
+  price: 1.5
+  product_id: 1
+
+two:
+  dateline: 2012-02-22
+  minimumorder: 1
+  price: 1.5
+  product_id: 1
