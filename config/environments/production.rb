@@ -56,5 +56,8 @@ Testdemo::Application.configure do
   config.i18n.fallbacks = true
 
   # Send deprecation notices to registered listeners
+FB_KEY = '183790168396315'
+FB_SECRET = '40a410bdce5847c9b220e051ed3c324e'
+
   config.active_support.deprecation = :notify
 end
