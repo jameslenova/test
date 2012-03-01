@@ -6,7 +6,8 @@ gem 'rails', '3.1.1'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-gem 'activerecord-sqlite3-adapter'
+gem 'mysql2', '~> 0.3.7', :group => :production
+#gem 'activerecord-sqlite3-adapter'
 #gem 'pg'
 
 
